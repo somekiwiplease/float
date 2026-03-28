@@ -1,0 +1,108 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Float",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "macOSPrivateApi": true,
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": false
+      },
+      "globalShortcut": {
+        "all": true
+      },
+      "window": {
+        "all": false,
+        "create": true,
+        "show": true,
+        "hide": true,
+        "setFocus": true,
+        "close": true,
+        "setPosition": true,
+        "setSize": true,
+        "setAlwaysOnTop": true,
+        "startDragging": true,
+        "maximize": true,
+        "unmaximize": true
+      },
+      "fs": {
+        "all": false
+      },
+      "path": {
+        "all": false
+      },
+      "http": {
+        "all": false
+      },
+      "notification": {
+        "all": false
+      },
+      "dialog": {
+        "all": false
+      },
+      "clipboard": {
+        "all": false
+      },
+      "process": {
+        "all": false
+      },
+      "os": {
+        "all": false
+      },
+      "protocol": {
+        "all": false,
+        "asset": false,
+        "assetScope": []
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.float.app",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; img-src 'self' data:; connect-src ipc: tauri:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none';",
+      "dangerousDisableAssetCspModification": false,
+      "freezePrototype": true
+    },
+    "windows": [
+      {
+        "label": "main",
+        "title": "Float",
+        "width": 520,
+        "height": 360,
+        "x": 100,
+        "y": 80,
+        "center": false,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": false,
+        "skipTaskbar": true,
+        "visible": false
+      }
+    ],
+    "systemTray": {
+      "iconPath": "icons/32x32.png",
+      "iconAsTemplate": true,
+      "menuOnLeftClick": false
+    }
+  }
+}
