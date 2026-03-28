@@ -15,3 +15,4 @@ src-tauri/target/
 # Env
 .env
 .env.*
+package-lock.json
