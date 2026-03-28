@@ -24,12 +24,6 @@ Float is an open-source desktop sticky notes app built with **Tauri + React**. E
 
 ---
 
-## Screenshots
-
-> Coming soon
-
----
-
 ## Install
 
 ### Download (recommended)
