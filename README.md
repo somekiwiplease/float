@@ -2,7 +2,6 @@
 
 > Beautiful, lightweight sticky notes for your desktop. Pastel colors, rich text, and a tiny footprint.
 
----
 
 ## What is Float?
 
