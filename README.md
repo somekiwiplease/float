@@ -1,13 +1,12 @@
 # Float
 
-> Beautiful, lightweight sticky notes for your desktop. Pastel colors, rich text, and a tiny footprint.
+> Lightweight sticky notes for your desktop. Pastel colors, rich text, and a tiny footprint.
 
 
 ## What is Float?
 
 Float is an open-source desktop sticky notes app built with **Tauri + React**. Each note lives as its own native window — just like macOS Stickies — so your desktop stays fully clickable underneath. Notes are saved locally to your machine. No cloud, no account, no tracking.
 
----
 
 ## Features
 
@@ -22,7 +21,6 @@ Float is an open-source desktop sticky notes app built with **Tauri + React**. E
 - **Local storage** — Notes saved to `~/.float/notes.json`, never leaves your machine
 - **Tiny footprint** — Built with Tauri (~5MB), not Electron
 
----
 
 ## Install
 
@@ -39,7 +37,6 @@ Go to [Releases](https://github.com/somekiwiplease/float/releases) and download 
 
 Double-click to install. That's it.
 
----
 
 ## Run from Source
 
@@ -75,7 +72,6 @@ npm run tauri build
 
 The compiled app will be in `src-tauri/target/release/bundle/`.
 
----
 
 ## Project Structure
 
@@ -103,7 +99,6 @@ float/
         └── release.yml         # Auto-builds on git tag push
 ```
 
----
 
 ## Keyboard Shortcuts
 
@@ -114,7 +109,6 @@ float/
 | `Cmd/Ctrl + I` | Italic |
 | `Cmd/Ctrl + U` | Underline |
 
----
 
 ## How It Works
 
@@ -122,7 +116,6 @@ Each Float note is its own **native Tauri window** — transparent, frameless, a
 
 Notes are saved as JSON to `~/.float/notes.json` using atomic writes (write to temp → fsync → rename) to prevent corruption. All data is validated in both Rust and React before saving.
 
----
 
 ## Tech Stack
 
@@ -134,7 +127,6 @@ Notes are saved as JSON to `~/.float/notes.json` using atomic writes (write to t
 | Bundler | Vite |
 | CI/CD | GitHub Actions |
 
----
 
 ## Security
 
@@ -145,7 +137,6 @@ Notes are saved as JSON to `~/.float/notes.json` using atomic writes (write to t
 - Atomic file writes prevent data corruption
 - No `eval`, no `innerHTML`, no external scripts
 
----
 
 ## Contributing
 
@@ -156,12 +147,10 @@ When adding new features:
 - Validate all user input in both Rust and React
 - Don't add new Tauri API permissions unless absolutely necessary
 
----
 
 ## License
 
 MIT — do whatever you want with it.
 
----
 
 Made by [Sharvari Suresh](https://somekiwiplease.com)
